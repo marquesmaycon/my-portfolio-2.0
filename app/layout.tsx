@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Calistoga, Inter } from "next/font/google";
 import "./globals.css";
+import { twMerge } from "tailwind-merge";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const calistoga = Calistoga({
+  variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["400"],
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={twMerge(
+          inter.variable,
+          calistoga.variable,
+          "bg-gray-900 text-white antialiased font-sans",
+        )}
       >
         {children}
       </body>
