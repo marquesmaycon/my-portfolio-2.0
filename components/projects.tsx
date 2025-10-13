@@ -51,7 +51,7 @@ export function Projects() {
     <section id="projects" className="pb-16 px-4 lg:py-24">
       <div className="container mx-auto">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
+          <p className="uppercase font-semibold tracking-widest gradient-primary text-transparent bg-clip-text">
             Real world results
           </p>
         </div>
@@ -73,7 +73,7 @@ export function Projects() {
               />
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                  <div className="gradient-primary inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
