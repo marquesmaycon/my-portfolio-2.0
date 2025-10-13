@@ -1,4 +1,4 @@
-export function CheckCircle() {
+export function CheckCircle(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ export function CheckCircle() {
       stroke-width="1.5"
       stroke="currentColor"
       className="size-6"
+      {...props}
     >
       <title>Check Circle</title>
       <path

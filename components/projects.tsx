@@ -1,11 +1,12 @@
 import Image from "next/image";
 
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import grainImage from "@/assets/images/grain.jpg";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import { ArrowUpRight } from "./svgs/arrow-up-right";
+import { CheckCircle } from "./svgs/check-circle";
 
 const portfolioProjects = [
   {
@@ -89,12 +90,7 @@ export function Projects() {
                         key={result.title}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
-                        <Image
-                          src={CheckCircleIcon}
-                          alt="Check Icon"
-                          className="invert size-5 md:size-6"
-                        />
-                        {/* TO DO => converter em componente svg para corrigir a cor */}
+                        <CheckCircle className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
                     ))}
@@ -105,11 +101,7 @@ export function Projects() {
                       className="bg-white text-gray-950 h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
                     >
                       <span>View Project</span>
-                      <Image
-                        src={ArrowUpRightIcon}
-                        alt="Arrow Up Right Icon"
-                        className="size-4"
-                      />
+                      <ArrowUpRight className="size-4" />
                     </button>
                   </a>
                 </div>
