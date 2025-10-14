@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 
-import grainImage from "@/assets/images/grain.jpg";
 import memojiImage from "@/assets/images/memoji-computer.png";
 
+import { GrainBg } from "./graing-bg";
 import { HeroOrbit } from "./hero-orbit";
 import { ArrowDown } from "./svgs/arrow-down";
 import { Sparkle } from "./svgs/sparkle";
@@ -14,12 +14,7 @@ export function Hero() {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] ">
-        <div
-          className="absolute inset-0 -z-30 opacity-5"
-          style={{
-            backgroundImage: `url(${grainImage.src})`,
-          }}
-        />
+        <GrainBg />
         <div className="hero-ring" />
         <div className="hero-ring size-[820px]" />
         <div className="hero-ring size-[1020px]" />
