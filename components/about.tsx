@@ -55,13 +55,13 @@ const hobbies = [
     top: "65%",
   },
   {
-    title: "Pintura",
+    title: "Pintura 2",
     emoji: "🎨",
     left: "45%",
     top: "70%",
   },
   {
-    title: "Pintura",
+    title: "Pintura 3",
     emoji: "🎨",
     left: "70%",
     top: "45%",
