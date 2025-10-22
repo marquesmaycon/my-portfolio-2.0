@@ -53,9 +53,9 @@ export function Projects() {
     <section id="projects" className="pb-16 px-4 lg:py-24">
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Real world results"
-          title="Featured Projects"
-          description="See how I transformed concepts into engaging digital experiences."
+          eyebrow="Portfolio"
+          title="Projetos em Destaque"
+          description="Veja como transformei ideias em realidade com meus projetos recentes"
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
           {portfolioProjects.map((project, index) => (
@@ -86,10 +86,10 @@ export function Projects() {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button
                       type="button"
-                      className="bg-white text-gray-950 h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"
+                      className="bg-white text-gray-950 h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 cursor-pointer hover:bg-white/70 transition-colors duration-300"
                     >
                       <span>View Project</span>
                       <ArrowUpRight className="size-4" />

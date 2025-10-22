@@ -20,7 +20,7 @@ export function Contact() {
             <div>
               <button
                 type="button"
-                className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
+                className="text-white bg-gray-900 border border-gray-950 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max cursor-pointer hover:bg-gray-700 hover:backdrop-blur-3xl transition-all duration-300"
               >
                 <span className="font-semibold">Entre em contato</span>
                 <ArrowUpRight className="size-4" />

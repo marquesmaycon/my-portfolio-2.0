@@ -70,7 +70,7 @@ const hobbies = [
 
 export function About() {
   return (
-    <section className="py-20 px-4 lg:py-28">
+    <section className="py-20 px-4 lg:py-28" id="about">
       <div className="container mx-auto">
         <SectionHeader
           eyebrow="Sobre mim"
@@ -157,8 +157,8 @@ const TechIcon = ({
       <svg className="size-0">
         <title>Tech Icon Gradient</title>
         <linearGradient id="tech-icon-gradient">
-          <stop offset="0%" stopColor="#5ee9b5" />
-          <stop offset="100%" stopColor="#00bcff" />
+          <stop offset="0%" stopColor="var(--color-primary)" />
+          <stop offset="100%" stopColor="var(--color-secondary)" />
         </linearGradient>
       </svg>
     </>

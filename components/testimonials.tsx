@@ -45,11 +45,11 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="py-16 px-4 lg:py-24">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What Clients Say About Me"
-          description="Don't just take my word for it, see what my clients have to say about my work."
+          eyebrow="Clientes Satisfeitos"
+          title="O que os clientes dizem sobre mim"
+          description="Não acredite apenas na minha palavra, veja o que meus clientes têm a dizer sobre meu trabalho."
         />
         <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <div className="flex flex-none gap-8">

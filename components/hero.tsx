@@ -11,9 +11,20 @@ import { Sparkle } from "./svgs/sparkle";
 import { Star } from "./svgs/star";
 
 export function Hero() {
+
+  function scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] ">
+    <main
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      id="home"
+    >
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] -z-10">
         <GrainBg />
         <div className="hero-ring" />
         <div className="hero-ring size-[820px]" />
@@ -26,7 +37,7 @@ export function Hero() {
           orbitDuration="30s"
           spinDuration="3s"
         >
-          <Sparkle className="text-emerald-300/20 size-8" />
+          <Sparkle className="text-primary/20 size-8" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -35,11 +46,11 @@ export function Hero() {
           orbitDuration="32s"
           spinDuration="3s"
         >
-          <Sparkle className="text-emerald-300/20 size-5" />
+          <Sparkle className="text-primary/20 size-5" />
         </HeroOrbit>
 
         <HeroOrbit size={520} rotation={-41} orbitDuration="34s">
-          <div className="bg-emerald-300/20 size-3 rounded-full" />
+          <div className="bg-primary/20 size-3 rounded-full" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -48,7 +59,7 @@ export function Hero() {
           orbitDuration="36s"
           spinDuration="3s"
         >
-          <Sparkle className="text-emerald-300/20 size-10" />
+          <Sparkle className="text-primary/20 size-10" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -57,7 +68,7 @@ export function Hero() {
           orbitDuration="38s"
           spinDuration="6s"
         >
-          <Star className="text-emerald-300 size-12" />
+          <Star className="text-primary size-12" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -66,11 +77,11 @@ export function Hero() {
           orbitDuration="40s"
           spinDuration="6s"
         >
-          <Star className="text-emerald-300 size-8" />
+          <Star className="text-primary size-8" />
         </HeroOrbit>
 
         <HeroOrbit size={650} rotation={-5} orbitDuration="42s">
-          <div className="bg-emerald-300/20 size-3 rounded-full" />
+          <div className="bg-primary/20 size-3 rounded-full" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -79,11 +90,11 @@ export function Hero() {
           orbitDuration="44s"
           spinDuration="3s"
         >
-          <Sparkle className="text-emerald-300/20 size-14" />
+          <Sparkle className="text-primary/20 size-14" />
         </HeroOrbit>
 
         <HeroOrbit size={720} rotation={83} orbitDuration="46s">
-          <div className="bg-emerald-300/20 size-3 rounded-full" />
+          <div className="bg-primary/20 size-3 rounded-full" />
         </HeroOrbit>
 
         <HeroOrbit
@@ -92,7 +103,7 @@ export function Hero() {
           orbitDuration="48s"
           spinDuration="6s"
         >
-          <Star className="text-emerald-300 size-28" />
+          <Star className="text-primary size-28" />
         </HeroOrbit>
       </div>
 
@@ -125,20 +136,28 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-center mt-8 gap-4">
           <button
             type="button"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer hover:bg-primary/10 hover:backdrop-blur-lg transition-all duration-300"
+            onClick={() => scrollToSection("projects")}
           >
             <span className="font-semibold">Explore meu trabalho</span>
             <ArrowDown />
           </button>
-          <button
-            type="button"
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+          <a
+            href="https://web.whatsapp.com/send?phone=5544991173753&text=Oi%20Maycon%2C%20vim%20do%20seu%20portf%C3%B3lio"
+            target="_blank"
+            rel="noreferrer"
           >
-            <span>🤝</span>
-            <span className="font-semibold">Entre em contato</span>
-          </button>
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer hover:bg-primary/10 hover:backdrop-blur-lg transition-all hover:text-white hover:border-primary/20 duration-300"
+            >
+              <span>🤝</span>
+              <span className="font-semibold">Entre em contato</span>
+            </button>
+            <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5544991173753/?t=Oi%20Maycon,%20vim%20do%20seu%20portf%C3%B3lio"></script>
+          </a>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
