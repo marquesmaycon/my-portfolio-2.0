@@ -1,6 +1,9 @@
-import Image from "next/image";
-import { type ClassNameValue, twMerge } from "tailwind-merge";
+"use client";
 
+import { motion } from "motion/react";
+import Image from "next/image";
+import { useRef } from "react";
+import { type ClassNameValue, twMerge } from "tailwind-merge";
 import bookImage from "@/assets/images/book-cover.png";
 import mapImage from "@/assets/images/map.png";
 import smileMemojiImage from "@/assets/images/memoji-smile.png";
@@ -69,6 +72,8 @@ const hobbies = [
 ];
 
 export function About() {
+  const ref = useRef(null);
+
   return (
     <section className="py-20 px-4 lg:py-28" id="about">
       <div className="container mx-auto">
@@ -95,11 +100,14 @@ export function About() {
               digitais"
                 className="px-6 pt-6"
               />
-              <ToolboxItems items={toolsbox} />
+              <ToolboxItems
+                items={toolsbox}
+                iconWrapperClassName="animate-move-left"
+              />
               <ToolboxItems
                 items={toolsbox}
                 className="mt-6"
-                iconWrapperClassName="-translate-x-1/2"
+                iconWrapperClassName="-translate-x-1/2 animate-move-right [animation-duration:20s]"
               />
             </Card>
           </div>
@@ -111,16 +119,18 @@ export function About() {
                 description="Explore meus interesses e hobbies fora do código"
                 className="p-6"
               />
-              <div className="relative flex-1">
+              <div className="relative flex-1" ref={ref}>
                 {hobbies.map(({ title, emoji, left, top }) => (
-                  <div
+                  <motion.div
                     key={title}
                     className="absolute inline-flex items-center gap-2 px-6 gradient-primary rounded-full py-1.5"
                     style={{ left, top }}
+                    drag
+                    dragConstraints={ref}
                   >
                     <span className="font-medium text-gray-950">{title}</span>
                     <span>{emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
@@ -131,7 +141,9 @@ export function About() {
                 alt="Map"
                 className="h-full w-full object-cover object-left-top"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-1/2 rounded-full gradient-primary after:[''] after:absolute after:inset-0 after:outline after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute top-1/2 left-1/2 -translate-1/2 rounded-full after:[''] after:absolute after:inset-0 after:outline after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="absolute inset-0 rounded-full gradient-primary -z-20 animate-ping [animation-duration:2s]" />
+                <div className="absolute inset-0 rounded-full gradient-primary -z-10" />
                 <Image
                   src={smileMemojiImage}
                   alt="Smile Memoji"
@@ -190,9 +202,9 @@ const ToolboxItems = ({
           iconWrapperClassName,
         )}
       >
-        {items.map(({ title, icon }) => (
+        {[...items, ...items].map(({ title, icon }, i) => (
           <div
-            key={title}
+            key={title + +i}
             className="inline-flex items-center gap-2 py-2 px-3 outline-2 outline-white/10 rounded-lg"
           >
             <TechIcon component={icon} />
