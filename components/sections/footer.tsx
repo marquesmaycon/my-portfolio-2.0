@@ -1,6 +1,10 @@
 import { ArrowUpRight } from "../svgs/arrow-up-right";
 
 const links = [
+  {
+    name: "WhatsApp",
+    href: "https://web.whatsapp.com/send?phone=5544991173753&text=Oi%20Maycon%2C%20vim%20do%20seu%20portf%C3%B3lio",
+  },
   { name: "Instagram", href: "https://instagram.com/marquesmaycon/" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/mayconhenrique/" },
   { name: "GitHub", href: "https://github.com/marquesmaycon" },

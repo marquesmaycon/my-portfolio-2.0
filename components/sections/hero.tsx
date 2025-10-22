@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import memojiImage from "@/assets/images/memoji-computer.png";
+import emoji1 from "@/assets/images/emoji1.webp";
 
 import { GrainBg } from "../graing-bg";
 import { HeroOrbit } from "../hero-orbit";
@@ -20,7 +20,7 @@ export function Hero() {
 
   return (
     <main
-      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip px-4"
       id="home"
     >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] -z-10">
@@ -109,8 +109,8 @@ export function Hero() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image
-            src={memojiImage}
-            className="size-[100px]"
+            src={emoji1}
+            className="size-28"
             alt="Memoji"
             width={300}
             height={300}
@@ -153,7 +153,6 @@ export function Hero() {
               <span>🤝</span>
               <span className="font-semibold">Entre em contato</span>
             </button>
-            <script src="https://whatsa.me/bt-min.js?link=https://whatsa.me/5544991173753/?t=Oi%20Maycon,%20vim%20do%20seu%20portf%C3%B3lio"></script>
           </a>
         </div>
       </div>
