@@ -1,4 +1,4 @@
-import { Star } from "./svgs/star";
+import { Star } from "../svgs/star";
 
 const words = [
   "Performático",

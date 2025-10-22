@@ -7,15 +7,15 @@ import { type ClassNameValue, twMerge } from "tailwind-merge";
 import bookImage from "@/assets/images/book-cover.png";
 import mapImage from "@/assets/images/map.png";
 import smileMemojiImage from "@/assets/images/memoji-smile.png";
-import { Card } from "./card";
-import { CardHeader } from "./card-header";
-import { SectionHeader } from "./section-header";
-import { Chrome } from "./svgs/chrome";
-import { Css3 } from "./svgs/css3";
-import { Github } from "./svgs/github";
-import { Html5 } from "./svgs/html5";
-import { React } from "./svgs/react";
-import { SquareJs } from "./svgs/square-js";
+import { Card } from "../card";
+import { CardHeader } from "../card-header";
+import { SectionHeader } from "../section-header";
+import { Chrome } from "../svgs/chrome";
+import { Css3 } from "../svgs/css3";
+import { Github } from "../svgs/github";
+import { Html5 } from "../svgs/html5";
+import { React } from "../svgs/react";
+import { SquareJs } from "../svgs/square-js";
 
 const toolsbox = [
   { title: "JavaScript", icon: SquareJs },

@@ -4,14 +4,13 @@ import Image from "next/image";
 
 import memojiImage from "@/assets/images/memoji-computer.png";
 
-import { GrainBg } from "./graing-bg";
-import { HeroOrbit } from "./hero-orbit";
-import { ArrowDown } from "./svgs/arrow-down";
-import { Sparkle } from "./svgs/sparkle";
-import { Star } from "./svgs/star";
+import { GrainBg } from "../graing-bg";
+import { HeroOrbit } from "../hero-orbit";
+import { ArrowDown } from "../svgs/arrow-down";
+import { Sparkle } from "../svgs/sparkle";
+import { Star } from "../svgs/star";
 
 export function Hero() {
-
   function scrollToSection(sectionId: string) {
     const section = document.getElementById(sectionId);
     if (section) {

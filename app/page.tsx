@@ -1,11 +1,11 @@
-import { About } from "@/components/about";
-import { Contact } from "@/components/contact";
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
-import { Projects } from "@/components/projects";
-import { Tape } from "@/components/tape";
-import { Testimonials } from "@/components/testimonials";
+import { About } from "@/components/sections/about";
+import { Contact } from "@/components/sections/contact";
+import { Footer } from "@/components/sections/footer";
+import { Header } from "@/components/sections/header";
+import { Hero } from "@/components/sections/hero";
+import { Projects } from "@/components/sections/projects";
+import { Tape } from "@/components/sections/tape";
+import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Home() {
   return (

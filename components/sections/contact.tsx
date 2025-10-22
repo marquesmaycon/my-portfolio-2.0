@@ -1,5 +1,5 @@
-import { GrainBg } from "./graing-bg";
-import { ArrowUpRight } from "./svgs/arrow-up-right";
+import { GrainBg } from "../graing-bg";
+import { ArrowUpRight } from "../svgs/arrow-up-right";
 
 export function Contact() {
   return (

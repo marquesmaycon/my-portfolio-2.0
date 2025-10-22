@@ -6,8 +6,8 @@ import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
-import { Card } from "./card";
-import { SectionHeader } from "./section-header";
+import { Card } from "../card";
+import { SectionHeader } from "../section-header";
 
 const testimonials = [
   {

@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "./svgs/arrow-up-right";
+import { ArrowUpRight } from "../svgs/arrow-up-right";
 
 const links = [
   { name: "Instagram", href: "https://instagram.com/marquesmaycon/" },
