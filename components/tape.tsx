@@ -19,8 +19,8 @@ export function Tape() {
       <div className="gradient-primary -rotate-3 -mx-1">
         <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <div className="flex flex-none gap-4 py-3 pr-4 animate-move-left">
-            {[...words, ...words].map((word) => (
-              <div key={word} className="inline-flex items-center gap-4">
+            {[...words, ...words].map((word, i) => (
+              <div key={word + +i} className="inline-flex items-center gap-4">
                 <span className="text-gray-900 uppercase font-extrabold text-sm">
                   {word}
                 </span>
