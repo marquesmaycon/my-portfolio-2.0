@@ -49,8 +49,8 @@ export function MoreProjects() {
     <section className="py-16 px-4 lg:py-24">
       <div className="container mx-auto px-4">
         <SectionHeader
-          eyebrow="Mais Projetos"
-          title="Projetos Adicionais"
+          eyebrow="Portfólio"
+          title="Mais Projetos"
           description="Esses são outros projetos que desenvolvi ao longo dos últimos anos"
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -m-4">

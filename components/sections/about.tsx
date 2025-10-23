@@ -139,17 +139,18 @@ export function About() {
             <Card className="relative h-[320px] p-0 md:col-span-2 lg:col-span-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58578.5116221719!2d-51.93705867412789!3d-23.418695968218792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1761143772611!5m2!1spt-BR!2sbr"
-                width="600"
+                width="640"
                 height="450"
                 title="Maringá Map"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
+
               <div className="absolute top-1/2 left-1/2 -translate-1/2 rounded-full pointer-events-none size-20">
                 <div className="absolute inset-0 rounded-full gradient-primary -z-20 animate-ping [animation-duration:2s]" />
-                <div className="absolute inset-0 rounded-full gradient-primary -z-10 border border-primary/30" />
-                <div className="absolute -top-3 inset-0 overflow-hidden">
+                <div className="absolute inset-0 rounded-full gradient-primary -z-10 border-2 border-primary shadow-2xl shadow-primary" />
+                <div className="absolute -top-3 inset-0 overflow-hidden p-1">
                   <Image src={emoji2} alt="Smile Memoji" />
                 </div>
               </div>

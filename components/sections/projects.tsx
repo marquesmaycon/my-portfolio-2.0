@@ -72,9 +72,9 @@ export function Projects() {
     <section id="projects" className="pb-16 px-4 lg:py-24">
       <div className="container mx-auto">
         <SectionHeader
-          eyebrow="Portfolio"
+          eyebrow="Portfólio"
           title="Projetos em Destaque"
-          description="Veja como transformei ideias em realidade com meus projetos recentes"
+          description="Esses são meus projetos mais relevantes e completos"
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
           {portfolioProjects.map(
