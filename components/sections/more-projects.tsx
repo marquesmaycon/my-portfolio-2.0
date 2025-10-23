@@ -30,7 +30,7 @@ const projects = [
     demo: "https://god-of-war-ragnarok.mklly.com.br/",
   },
   {
-    tag: "Jogo da Memórias Vanilla JS",
+    tag: "Jogo da Memória Vanilla JS",
     year: "2022",
     title: "🧠 Jogo da Memória - Rick and Morty",
     description:
@@ -53,6 +53,18 @@ export function MoreProjects() {
           title="Mais Projetos"
           description="Esses são outros projetos que desenvolvi ao longo dos últimos anos"
         />
+        <p className="text-white/30 text-center">
+          Você pode conferir todos eles no meu{" "}
+          <a
+            href="https://github.com/marquesmaycon"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 underline hover:text-white transition-colors duration-300"
+          >
+            GitHub
+            <ArrowUpRight className="size-4" />
+          </a>
+        </p>
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -m-4">
           <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:60s] hover:[animation-play-state:paused] ">
             {[...projects, ...projects].map(

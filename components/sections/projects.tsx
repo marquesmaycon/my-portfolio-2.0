@@ -132,7 +132,7 @@ export function Projects() {
                     <Image
                       src={image}
                       alt={title}
-                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none border border-white/50 rounded-2xl"
+                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-[650px] lg:max-w-none object-cover object-top-left border-4 border-b-0 border-white/30 rounded-2xl rounded-b-none"
                     />
                   </div>
                 </div>
