@@ -90,8 +90,8 @@ export function About() {
                 title="Formação"
                 description="Análise e Desenvolvimento de Sistemas - UniCV (2023 - 2025)"
               />
-              <div className="w-40 mx-auto mt-8 md:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+              <div className="w-40 mx-auto mt-8 md:mt-0 -skew-y-4 after:content-[''] after:size-40 after:bg-neutral-300/30 after:absolute after:-top-2 after:-left-2 after:-z-10 after:shadow-lg">
+                <Image src={bookImage} alt="Book cover" className="" />
               </div>
             </Card>
             <Card className="min-h-[320px]  md:col-span-3 lg:col-span-2">
