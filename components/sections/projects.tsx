@@ -16,12 +16,11 @@ const portfolioProjects = [
     year: "2025",
     title: "Marketplace Next.js",
     topics: [
-      { title: "React, Next, TanStack Query & Form, Shadcn UI, Tailwind CSS, TypeScript" },
+      { title: "React, Next, TanStack Query & Form, Shadcn UI, Tailwind CSS, TypeScript." },
       {
         title:
-          "Aplicação Next.js moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento.",
+          "Aplicação moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento.",
       },
-      { title: "LocalStorage para salvar carrinho" },
     ],
     demo: "https://marketplace-nextjs.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/marketplace-nextjs",
@@ -32,12 +31,11 @@ const portfolioProjects = [
     year: "2025",
     title: "Dummy Users",
     topics: [
-      { title: "React, TanStack Query, Ant Design, TypeScript" },
+      { title: "React, TanStack Query, Ant Design, TypeScript." },
       {
         title:
-          "Sistema completo de gerenciamento de usuários que demonstra implementação de autenticação, CRUD de usuários, gerenciamento de estado e boas práticas de desenvolvimento frontend.",
+          "Sistema de gerenciamento de usuários que demonstra implementação de autenticação, CRUD de usuários e gerenciamento de estado e cache com TanStack Query.",
       },
-      { title: "Persistências simulados no cache com TanStack Query" },
     ],
     demo: "https://dummy-users.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/dummy-users",
@@ -54,11 +52,7 @@ const portfolioProjects = [
       },
       {
         title:
-          "Um sistema completo de rastreamento de hábitos. Organize sua rotina, acompanhe seu progresso e construa hábitos saudáveis de forma eficiente e visual.",
-      },
-      {
-        title:
-          "Adicione hábitos, configure o dia da semana, acompanhe seu progresso no formato de calendário, dados persistidos no banco de dados.",
+          "Um sistema de rastreamento de hábitos. Adicione hábitos, configure o dia da semana, acompanhe seu progresso, dados persistidos no banco de dados.",
       },
     ],
     demo: "https://habit-tracker.mklly.com.br/",
@@ -72,11 +66,11 @@ const portfolioProjects = [
     topics: [
       {
         title:
-          "Next.js, Turborepo, PostgreSQL, Prisma ORM, Fastify, Node, Shadcn/ui, Tailwind CSS, TypeScript",
+          "Next.js, Turborepo, PostgreSQL, Prisma ORM, Fastify, Node, Shadcn/ui, Tailwind CSS, TypeScript.",
       },
       {
         title:
-          "Um boilerplate completo para SaaS multi-tenant com autenticação robusta e sistema de autorização baseado em RBAC (Role-Based Access Control). Desenvolvido com as melhores práticas e arquitetura monorepo para máxima escalabilidade e reutilização de código.",
+          "SaaS multi-tenant com autenticação robusta e sistema de autorização baseado em RBAC (Role-Based Access Control). Desenvolvido com as melhores práticas e arquitetura monorepo para máxima escalabilidade e reutilização de código.",
       },
     ],
     repository: "https://github.com/marquesmaycon/next-saas-rbac",
@@ -120,14 +114,15 @@ export function Projects() {
                           className="flex gap-2 text-sm md:text-base text-white/50"
                         >
                           <CheckCircle className="size-5 md:size-6 shrink-0" />
-                          <span>{result.title}</span>
+                          <span className="line-clamp-3 md:line-clamp-none">{result.title}</span>
                         </li>
                       ))}
                     </ul>
+
                     <a href={repository} target="_blank" className="mr-4">
                       <button
                         type="button"
-                        className="bg-white text-gray-950 h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 cursor-pointer hover:bg-white/70 transition-colors duration-300"
+                        className="bg-white text-gray-950 h-11 md:h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 cursor-pointer hover:bg-white/70 transition-colors duration-300"
                       >
                         <span>Ver Repositório</span>
                         <ArrowUpRight className="size-4" />
@@ -137,7 +132,7 @@ export function Projects() {
                       <a href={demo} target="_blank">
                         <button
                           type="button"
-                          className="bg-white text-gray-950 h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 cursor-pointer hover:bg-white/70 transition-colors duration-300"
+                          className="bg-white text-gray-950 h-11 md:h-12 w-full px-6 md:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-4 md:mt-8 cursor-pointer hover:bg-white/70 transition-colors duration-300"
                         >
                           <span>Ver Demo</span>
                           <ArrowUpRight className="size-4" />
