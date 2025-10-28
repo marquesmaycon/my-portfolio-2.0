@@ -28,7 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <header></header>
       <body
         className={twMerge(
           inter.variable,

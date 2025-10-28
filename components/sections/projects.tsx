@@ -3,6 +3,7 @@ import Image from "next/image";
 import dummyUsersPrintScreen from "@/assets/images/dummy-users.png";
 import habitTrackerPrintScreen from "@/assets/images/habit-tracker.png";
 import nextSaasRbacPrintScreen from "@/assets/images/next-saas-rbac.png";
+import marketplacePrintSCreen from "@/assets/images/marketplace-nextjs.png"
 
 import { Card } from "../card";
 import { SectionHeader } from "../section-header";
@@ -10,6 +11,22 @@ import { ArrowUpRight } from "../svgs/arrow-up-right";
 import { CheckCircle } from "../svgs/check-circle";
 
 const portfolioProjects = [
+  {
+    tag: "Fluxo de Checkout",
+    year: "2025",
+    title: "Marketplace Next.js",
+    topics: [
+      { title: "React, Next, TanStack Query & Form, Shadcn UI, Tailwind CSS, TypeScript" },
+      {
+        title:
+          "Aplicação Next.js moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento.",
+      },
+      { title: "LocalStorage para salvar carrinho" },
+    ],
+    demo: "https://marketplace-nextjs.mklly.com.br/",
+    repository: "https://github.com/marquesmaycon/marketplace-nextjs",
+    image: marketplacePrintSCreen,
+  },
   {
     tag: "API externas",
     year: "2025",
