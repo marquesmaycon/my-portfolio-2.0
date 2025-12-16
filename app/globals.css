@@ -43,7 +43,7 @@
 @layer base {
   * {
     scrollbar-width: thin;
-    scrollbar-color: var(--color-emerald-200) transparent;
+    scrollbar-color: var(--color-secondary) transparent;
   }
   
   .nav-link {
