@@ -36,7 +36,7 @@ export function Contact() {
               >
                 <button
                   type="button"
-                  className="text-white inline-flex items-center justify-center px-6 h-12 rounded-xl gap-2 w-[240px] cursor-pointer bg-gray-900 hover:bg-white/10 hover:backdrop-blur-lg transition-all duration-300 border border-gray-900/50 hover:border-white/50"
+                  className="text-white inline-flex items-center justify-center px-6 h-12 rounded-xl gap-2 w-[240px] cursor-pointer bg-gray-900 hover:bg-primary/20 hover:backdrop-blur-lg transition-all duration-300 border border-gray-900/50 hover:border-white/50"
                 >
                   <span className="font-semibold">Entre em contato</span>
                   <ArrowUpRight className="size-4" />
@@ -45,7 +45,7 @@ export function Contact() {
               <button
                 type="button"
                 onClick={copyEmailToClipboard}
-                className="border border-white/50 px-4 py-2 rounded-xl w-[240px] text-center text-sm font-semibold cursor-pointer hover:bg-primary/10 hover:backdrop-blur-sm transition-all duration-300 text-white h-12"
+                className="border border-white/50 px-4 py-2 rounded-xl w-[240px] text-center text-sm font-semibold cursor-pointer hover:bg-primary/20 bg-primary/10 backdrop-blur-sm transition-all duration-300 text-white h-12"
               >
                 {copied ? "E-mail copiado!" : "mayconmarquesh@gmail.com"}
               </button>
