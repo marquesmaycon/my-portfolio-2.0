@@ -26,8 +26,9 @@ const portfolioProjects = [
       },
     ],
     repository: "https://github.com/marquesmaycon/ask-room",
+    demo: "https://ask-room.mklly.com.br/",
     image: askRoomPrintSCreen,
-    wip: true,
+    wip: false
   },
   {
     tag: "Fluxo de Checkout",
