@@ -4,11 +4,12 @@ import dummyUsersPrintScreen from "@/assets/images/dummy-users.png";
 import habitTrackerPrintScreen from "@/assets/images/habit-tracker.png";
 import marketplacePrintSCreen from "@/assets/images/marketplace-nextjs.png";
 import nextSaasRbacPrintScreen from "@/assets/images/next-saas-rbac.png";
+import stockForgePrintScreen from "@/assets/images/stock-forge.png"
 
-import { Card } from "../card";
-import { SectionHeader } from "../section-header";
-import { ArrowUpRight } from "../svgs/arrow-up-right";
-import { CheckCircle } from "../svgs/check-circle";
+import { Card } from "../card"
+import { SectionHeader } from "../section-header"
+import { ArrowUpRight } from "../svgs/arrow-up-right"
+import { CheckCircle } from "../svgs/check-circle"
 
 const portfolioProjects = [
   {
@@ -17,13 +18,12 @@ const portfolioProjects = [
     title: "Ask Room + Gemini AI",
     topics: [
       {
-        title:
-          "Gemini AI, Next.js, TanStack Query & Form, Prisma ORM, Hono.js, Shadcn UI, Tailwind CSS, TypeScript",
+        title: "Gemini AI, Next.js, TanStack Query & Form, Prisma ORM, Hono.js, Shadcn UI, Tailwind CSS, TypeScript"
       },
       {
         title:
-          "Projeto full-stack que permite a criação de salas de conhecimento, onde usuários podem adicionar conteúdos em texto ou áudio e, a partir desse contexto, outras pessoas fazem perguntas que são respondidas por uma IA exclusivamente com base no material fornecido.",
-      },
+          "Projeto full-stack que permite a criação de salas de conhecimento, onde usuários podem adicionar conteúdos em texto ou áudio e, a partir desse contexto, outras pessoas fazem perguntas que são respondidas por uma IA exclusivamente com base no material fornecido."
+      }
     ],
     repository: "https://github.com/marquesmaycon/ask-room",
     demo: "https://ask-room.mklly.com.br/",
@@ -31,22 +31,38 @@ const portfolioProjects = [
     wip: false
   },
   {
+    tag: "TurboRepo - AdonisJS 7 + TanStack Start",
+    year: "2026",
+    title: "Stock Forge",
+    topics: [
+      {
+        title: "AdonisJS 7, TanStack Start & Query & Form & Table, Shadcn UI, Tailwind CSS TypeScript"
+      },
+      {
+        title:
+          "Projeto monorepo para gerenciamento de produtos e matérias-primas. Forjar um produto consome insumos, atualizando o estoque e interferindo em outras produções."
+      }
+    ],
+    repository: "https://github.com/marquesmaycon/ask-room",
+    demo: "https://ask-room.mklly.com.br/",
+    image: stockForgePrintScreen
+  },
+  {
     tag: "Fluxo de Checkout",
     year: "2025",
     title: "Marketplace Next.js",
     topics: [
       {
-        title:
-          "React, Next.js, TanStack Query & Form, Shadcn UI, Tailwind CSS, TypeScript.",
+        title: "React, Next.js, TanStack Query & Form, Shadcn UI, Tailwind CSS, TypeScript."
       },
       {
         title:
-          "Aplicação moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento.",
-      },
+          "Aplicação moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento."
+      }
     ],
     demo: "https://marketplace-nextjs.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/marketplace-nextjs",
-    image: marketplacePrintSCreen,
+    image: marketplacePrintSCreen
   },
   {
     tag: "Mono Repo",
@@ -54,16 +70,15 @@ const portfolioProjects = [
     title: "Next.js Saas RBAC",
     topics: [
       {
-        title:
-          "Next.js, Turborepo, PostgreSQL, Prisma ORM, Fastify, Node, Shadcn/ui, Tailwind CSS, TypeScript.",
+        title: "Next.js, Turborepo, PostgreSQL, Prisma ORM, Fastify, Node, Shadcn/ui, Tailwind CSS, TypeScript."
       },
       {
         title:
-          "SaaS multi-tenant com autenticação robusta e sistema de autorização baseado em RBAC (Role-Based Access Control). Desenvolvido com as melhores práticas e arquitetura monorepo para máxima escalabilidade e reutilização de código.",
-      },
+          "SaaS multi-tenant com autenticação robusta e sistema de autorização baseado em RBAC (Role-Based Access Control). Desenvolvido com as melhores práticas e arquitetura monorepo para máxima escalabilidade e reutilização de código."
+      }
     ],
     repository: "https://github.com/marquesmaycon/next-saas-rbac",
-    image: nextSaasRbacPrintScreen,
+    image: nextSaasRbacPrintScreen
   },
   {
     tag: "Full Stack",
@@ -71,17 +86,16 @@ const portfolioProjects = [
     title: "Habit Tracker",
     topics: [
       {
-        title:
-          "React, Next.js, PostgreSQL, Drizzle ORM, Tailwind CSS, Radix UI, Dayjs, TypeScript",
+        title: "React, Next.js, PostgreSQL, Drizzle ORM, Tailwind CSS, Radix UI, Dayjs, TypeScript"
       },
       {
         title:
-          "Um sistema de rastreamento de hábitos. Adicione hábitos, configure o dia da semana, acompanhe seu progresso, dados persistidos no banco de dados.",
-      },
+          "Um sistema de rastreamento de hábitos. Adicione hábitos, configure o dia da semana, acompanhe seu progresso, dados persistidos no banco de dados."
+      }
     ],
     demo: "https://habit-tracker.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/habit-tracker",
-    image: habitTrackerPrintScreen,
+    image: habitTrackerPrintScreen
   },
   {
     tag: "API externas",
@@ -91,14 +105,14 @@ const portfolioProjects = [
       { title: "React, TanStack Query, Ant Design, TypeScript." },
       {
         title:
-          "Sistema de gerenciamento de usuários que demonstra implementação de autenticação, CRUD de usuários e gerenciamento de estado e cache com TanStack Query.",
-      },
+          "Sistema de gerenciamento de usuários que demonstra implementação de autenticação, CRUD de usuários e gerenciamento de estado e cache com TanStack Query."
+      }
     ],
     demo: "https://dummy-users.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/dummy-users",
-    image: dummyUsersPrintScreen,
-  },
-];
+    image: dummyUsersPrintScreen
+  }
+]
 
 export function Projects() {
   return (
