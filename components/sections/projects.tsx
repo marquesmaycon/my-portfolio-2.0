@@ -43,8 +43,8 @@ const portfolioProjects = [
           "Projeto monorepo para gerenciamento de produtos e matérias-primas. Forjar um produto consome insumos, atualizando o estoque e interferindo em outras produções."
       }
     ],
-    repository: "https://github.com/marquesmaycon/ask-room",
-    demo: "https://ask-room.mklly.com.br/",
+    repository: "https://github.com/marquesmaycon/stock-forge",
+    demo: "https://stock-forge.mklly.com.br/",
     image: stockForgePrintScreen
   },
   {
